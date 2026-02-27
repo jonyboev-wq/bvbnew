@@ -14,6 +14,8 @@ import {
   X,
 } from 'lucide-react';
 
+const IMG_BASE = `${import.meta.env.BASE_URL}img/`;
+
 const navLinks = [
   { label: 'Каталог', href: '#catalog' },
   { label: 'Преимущества', href: '#features' },
@@ -39,7 +41,7 @@ const products = [
     description: 'Лучшие скрепки для лыж от той самой лыжной компании.',
     price: 249,
     oldPrice: 399,
-    image: '/img/skrepki-main.jpg',
+    image: `${IMG_BASE}skrepki-main.jpg`,
     link: 'https://www.avito.ru/moskva/sport_i_otdyh/1_para_lyzhnyh_skrepok_dlya_gonochnyh_lyzh_4569176201',
   },
   {
@@ -48,7 +50,7 @@ const products = [
     description: 'Термобаки для лыж с вашим логотипом. Объем 1 литр.',
     price: 1290,
     oldPrice: 3999,
-    image: '/img/termobak-main.jpg',
+    image: `${IMG_BASE}termobak-main.jpg`,
     link: 'https://t.me/bvbvbabab',
   },
   {
@@ -57,7 +59,7 @@ const products = [
     description: 'Регулируемый неопреновый темляк для лыжных палок.',
     price: 390,
     oldPrice: 590,
-    image: '/img/temlyak-main.jpg',
+    image: `${IMG_BASE}temlyak-main.jpg`,
     link: 'https://www.alibaba.com/product-detail/Trade-Assurance-Wholesale-High-Quality-Ski_60775697864.html',
   },
 ];
@@ -238,7 +240,7 @@ export default function App() {
       <header className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${scrolled ? 'border-b border-white/10 bg-slate-900/70 backdrop-blur-xl' : 'bg-transparent'}`}>
         <nav className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
           <a href="#" className="flex items-center gap-3">
-            <img src="/img/logo.png" alt="BVB" className="h-9 w-9 rounded-lg object-cover" />
+            <img src={`${IMG_BASE}logo.png`} alt="BVB" className="h-9 w-9 rounded-lg object-cover" />
             <div>
               <p className="text-sm font-semibold">BVB</p>
               <p className="text-xs text-slate-400">Официальная страница магазина</p>
