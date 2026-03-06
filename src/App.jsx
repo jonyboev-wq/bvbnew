@@ -60,7 +60,7 @@ const products = [
     price: 390,
     oldPrice: 590,
     image: `${IMG_BASE}temlyak-main.jpg`,
-    link: 'https://t.me/bvbvbabab',
+    link: 'https://www.alibaba.com/product-detail/Trade-Assurance-Wholesale-High-Quality-Ski_60775697864.html',
   },
 ];
 
